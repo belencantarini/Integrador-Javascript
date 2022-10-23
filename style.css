@@ -1,0 +1,144 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Menu */
+
+
+header .nav-link:hover,header .nav-item:last-child>.nav-link:hover{
+    color: whitesmoke !important;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+/* Banner principal */
+
+.bannerPrincipal{
+    display: flex;
+    height: 90vh;
+    background: url(./imagenes_integrador_front/ba1.jpg), rgba(0, 0, 0, 0.622);
+    background-blend-mode: color;
+    background-size: cover;
+    background-position: center;
+    align-items: flex-end;
+    text-align: end;
+    justify-content: end;
+    color: white;
+}
+
+.bannerPrincipal>div{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 7%;
+}
+
+.bannerPrincipal>div>div:last-child{
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.bannerPrincipal>div>div:first-child{
+    font-size: 35px;
+    font-weight: 600;
+    gap: 15px;
+}
+
+/* Cards */
+
+.titleCards{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.titleCards>div:last-child{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+/* Aside Publicidad */
+
+.pub{
+    display: flex;
+    padding: 25px 0;
+}
+
+.pub>.image{
+    width: 50%;
+}
+
+.pub>.image>img{
+    width: 100%;
+    height: auto;
+}
+
+.pub>.publicity{
+    background-color: rgb(55, 55, 55);
+    width: 50%;
+    color: white;
+    padding: 25px;
+}
+
+.title-publicity{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.publicity>div>span{
+    vertical-align: top;
+}
+
+.publicity>button{
+    margin-top: 15px;
+}
+
+/* Formulario */
+
+
+form>div:last-child>button{
+    background-color:rgb(104, 178, 0);
+    color: white;
+    border: 0;
+}
+
+
+/* Footer */
+
+footer{
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.9682247899159664) 0%, rgb(3, 64, 95) 36%, rgb(2, 74, 102) 100%);
+}
+
+footer .nav-link{
+    color: white;
+    align-self: center;
+}
+
+footer .nav-link:focus{
+    color: white;
+}
+
+footer .nav-link:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 1010px) 
+{
+.pub{flex-direction: column;}
+.pub>.image{width: 100%;}
+.pub>.publicity{width: 100%;}
+form{width: 75%;}
+footer>nav{
+    flex-direction: column;
+}
+}
