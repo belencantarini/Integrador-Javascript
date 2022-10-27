@@ -13,3 +13,7 @@ const botonBorrar = document.getElementById("botonBorrar");
 
 // Categoria
 const formCategoria = document.querySelector("#formCategoria");
+
+// Inputs
+const casilleros = document.getElementsByClassName('form-control');
+

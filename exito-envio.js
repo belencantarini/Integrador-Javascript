@@ -14,7 +14,7 @@ function exitoEnvio () {
         `Resumen de compra <hr>
         -Nombre y Apellido: ${resumenFormulario.nombre} ${resumenFormulario.apellido}<br>
         -Email: ${resumenFormulario.email}<br>
-        -Cantidad de Tickets: ${resumenFormulario.cantidadTickets}<br>
+        -Cantidad de Tickets: ${resumenFormulario.cantidad}<br>
         -Descuento: ${resumenFormulario.categoriaDescuento}<br><hr>
         <b>Total a Pagar: $ ${resumenFormulario.pagoTotal}.</b>`
 }
