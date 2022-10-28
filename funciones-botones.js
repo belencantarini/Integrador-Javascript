@@ -14,7 +14,6 @@ function borrarForm(e) {
 }
 
 function checkError() {
-    let informacion = false;
     let contador = 0;
 
     for (let item of casilleros){
@@ -22,7 +21,15 @@ function checkError() {
         item.value !== '' && contador++;
         formTickets.cantidad.value<1 ? formTickets.cantidad.classList.add('border-danger') : formTickets.cantidad.classList.remove('border-danger');
     }
+
+    console.log(contador);
     
+    return contador;
+}
+
+function completeForm(contador) {
+    let informacion = false;
+
     const categoriaDescuento = 
     formCategoria.value === '0' && 'Sin descuento' ||
     formCategoria.value === '1' && 'Estudiante' ||
@@ -49,12 +56,12 @@ function checkError() {
     return informacion;
 }
 
-
 function resumenForm(e) {
     e.preventDefault();
-    const completeForm = checkError();
-    completeForm && sessionStorage.setItem('resumenFormulario', JSON.stringify(completeForm))
-    completeForm && exitoEnvio();
+    const checkErrores = checkError();
+    const completeFormulario = completeForm(checkErrores);
+    completeFormulario && sessionStorage.setItem('resumenFormulario', JSON.stringify(completeFormulario))
+    completeFormulario && exitoEnvio();
 }
 
 botonBorrar.onclick = (e) => { borrarForm(e) }
