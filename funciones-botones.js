@@ -64,8 +64,8 @@ function resumenForm(e) {
     completeFormulario && exitoEnvio();
 }
 
-botonBorrar.onclick = (e) => { borrarForm(e) }
-botonResumen.onclick = (e) => { resumenForm(e) }
+botonBorrar.onclick = borrarForm;
+botonResumen.onclick = resumenForm;
 
 
 

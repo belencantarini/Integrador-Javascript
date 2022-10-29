@@ -4,6 +4,8 @@
     margin: 0;
 }
 
+
+
 /* Menu */
 
 
@@ -108,6 +110,18 @@ form>div:last-child>button{
     background-color:rgb(104, 178, 0);
     color: white;
     border: 0;
+}
+
+/* Footer always at the bottom */
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#autoFill{
+    flex: 1;
 }
 
 
